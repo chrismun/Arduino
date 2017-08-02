@@ -18,10 +18,7 @@ boolean loop1 = true;
  ArduCAM myCAM( OV5642, SPI_CS );
 #endif
 
-
-
 void setup() {
-  
   uint8_t vid, pid;
   uint8_t temp;
 #if defined(__SAM3X8E__)
@@ -147,28 +144,3 @@ void loop() {
      
   }
  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
