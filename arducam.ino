@@ -98,7 +98,9 @@ myCAM.clear_fifo_flag();
 
 void loop() {
   
-  uint8_t temp = 0xff, temp_last = 0; uint8_t start_capture = 0; temp = Serial.read();
+  uint8_t temp = 0xff, temp_last = 0;
+  uint8_t start_capture = 0;
+  temp = Serial.read();
   myCAM.clear_bit(ARDUCHIP_GPIO, GPIO_PWDN_MASK);
   myCAM.OV5642_set_JPEG_size(OV5642_640x480);
   delay(1000);
@@ -141,6 +143,5 @@ void loop() {
      //Clear the capture done flag 
      myCAM.clear_fifo_flag(); 
      start_capture = 0;
-     
   }
  }
