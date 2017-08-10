@@ -4,7 +4,6 @@
 #include <SPI.h>
 #include "memorysaver.h"
 
-
 /*
   Author: Chris Munley
   I wrote this code in an attempt to send pictures over Xbee Series 2 RF modules in tandem with arduino. The code should work, as it was put together
@@ -39,6 +38,10 @@
   saving options since it is supposed to run off solar. Also, I would work on a way to quickly change the rate of pictures, and some type of input to tell
   the arduino if you want to recieve the pictures now or save them to sd card and send them over once you take a certain amount.
 
+  Another advantageous function of the camera would be to add functionality to wire directly to the camera so that you can get 
+  live video without waiting on the xbee to catch up. This would be beneficial so that when setting up the camera you can tell exactly 
+  what it is looking at. 
+  
   If you want to talk to me about the code email me at chrismunley1@gmail.com I will be more than happy to help, I would love to see this project working
   after I struggled for hours on hours troubleshooting errors. 
 */
